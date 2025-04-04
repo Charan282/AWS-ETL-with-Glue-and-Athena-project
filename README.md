@@ -17,52 +17,50 @@ This project demonstrates an end-to-end data pipeline using AWS services. The pi
 
 3. Converted data into Parquet format for optimized storage and querying.
 
-AWS Glue Crawler:
+**AWS Glue Crawler:**
 
-Created a data catalog to expose S3 datasets as a structured database.
+1. Created a data catalog to expose S3 datasets as a structured database.
 
-Allowed Athena to query the data efficiently.
+2. Allowed Athena to query the data efficiently.
 
-Amazon Athena:
+**Amazon Athena:**
 
-Setup Athena query editor to run SQL queries over the structured dataset.
+1. Setup Athena query editor to run SQL queries over the structured dataset.
 
-Stored Athena query results in an S3 bucket.
+2. Stored Athena query results in an S3 bucket.
 
-Amazon Quicksight:
+**Amazon Quicksight:**
 
 Connected to Athena and visualized insights through dashboards.
 
 # Technologies Used
-Storage: Amazon S3
+1. **Storage:** Amazon S3
 
-ETL & Processing: AWS Glue (PySpark)
+2. **ETL & Processing:** AWS Glue (PySpark)
 
-Querying: Amazon Athena (SQL)
+3. **Querying:** Amazon Athena (SQL)
 
-Visualization: Amazon Quicksight
+4. **Visualization:** Amazon Quicksight
 
-Access Management: IAM Roles & Policies
+5. **Access Management:** IAM Roles & Policies
 
 # Setup & Execution
-Clone this repository:
-
-bash
-Copy
-Edit
+1. Clone this repository:
+```
 git clone https://github.com/yourusername/AWS-Data-Pipeline.git
 cd AWS-Data-Pipeline
-Follow the IAM setup instructions to create necessary roles and policies.
+```
+2. Follow the IAM setup instructions to create necessary roles and policies.
 
-Upload sample datasets to an S3 bucket.
+3. Upload sample datasets to an S3 bucket.
 
-Run AWS Glue Job and AWS Glue Crawler.
+4. Run AWS Glue Job and AWS Glue Crawler.
 
-Execute SQL queries in Athena.
+5. Execute SQL queries in Athena.
 
-Connect Athena to Quicksight for visualization.
+6. Connect Athena to Quicksight for visualization.
 
-Future Enhancements
-Implement AWS Lambda to trigger Glue Jobs on new data arrival.
+**Future Enhancements:**
+1. Implement AWS Lambda to trigger Glue Jobs on new data arrival.
 
-Automate the entire pipeline using AWS Step Functions.
+2. Automate the entire pipeline using AWS Step Functions.
